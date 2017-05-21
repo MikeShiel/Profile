@@ -16,8 +16,9 @@
 	</div>
 </div>
 
-
+<!-- about me -->
 <div id="about">
+	<a name="about"></a>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -43,26 +44,35 @@
 
 <br class= pro-line>
 
+<!-- My CV -->
+
 <div id="CV">
 	<div class="container">
     	<div class="row">
-      		<div class="col-xs-12">
+      		<div class="col-xs-12 col-md-6">
            	  <h1 class="slideDown">Résumé</h1>
            	  <p>Ruby on Rails</p>
            	  <p>JavaScript</p>
            	  <p>HTML</p>
            	  <p>CSS</p>
            	  <p>& many more check out my resume!</p>
-           	  <div class="resume-link"> <%= link_to "My Resume", asset_path("mikeshielresume.pdf"), class: 'btn-large' %>
-           	  	
-           	  </div>
+           	  
 			<!-- open up my resume -->
+        	</div>
+    		<div class="col-xs-12 col-md-6 accounts">
+    		  <a href="https://www.linkedin.com/in/michael-shiel-549866137/">
+    	   	  <i class="fa fa-linkedin"></i></a><p>Linkedin</p>
+	   	  	  <a href="https://github.com/MikeShiel">
+   	     	  <i class="fa fa-github"></i></a><p>GitHub</p>
+   	     	  <div class="resume-link"> <%= link_to "My Resume", asset_path("mikeshielresume.pdf"), class: 'btn-large' %></div>
         	</div>
       	</div>
 	</div>
 </div>
 
 <br id= pro-line>
+
+<!-- Contact me -->
 
 <div id="contact">
 	<div class="container">

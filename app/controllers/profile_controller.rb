@@ -2,6 +2,12 @@ class ProfileController < ApplicationController
   def contact
   end
 
+  def CV
+  end
+
+  def about
+  end
+
   def show
   end
 
