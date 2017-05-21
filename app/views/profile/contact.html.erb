@@ -1,17 +1,19 @@
 <div class="container">
-		<canvas class="particles.JS" width="2000" height="700" style="width: 100%; height: 100%;"></canvas>
+	<div id="particles-js">		
+	 <canvas class="particles-js" <%= render "profile/banner" %> width="2000" height="700" style="width: 100%; height: 100%;"></canvas>
 	 	<div class="navbar-fixed" id="navbar">
 			<ul class="nav-head">
 				<li><a id= "about1" href="about">About</a></li>
-				<li><a id= "CV1" href="CV">CV</a></li>
+				<li><a id= "CV1" href="CV">Résumé</a></li>
 				<li><a id= "contact1" href="contact">Contact</a></li>
 			</ul>
 		</div>
 		<div class="header-profile">
 			<h1>Mike Shiel</h1>
 			<h2>Web-Developer</h2>
-			<h2>Cool Guy</h2>
-		</div>		
+			<h3>Bachelors in International Relations (University of Pretoria)</h3>
+		</div>	
+	</div>
 </div>
 
 
@@ -24,32 +26,43 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-md-6 slideDown">
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+      	<p>Based in the Berlin Area.</p>
+        <p>Born in South Africa, I graduated at the University Of Pretoria in International Relations.</p>
+        <p>I took a gap year volunteering in the South Eastern Asian region, Mainly in Cambodia.</p>
+        <p>Coding has been a skill I've always wanted to master, I thouroughly enjoy the challenge for there is always something new to learn or to improve on.</p>
+        
       </div>
       <div class="col-xs-12 col-md-6 slideDown">
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+        <p>I'm a motivated and an ambitious indivudual and feel most comfortable when I am dropped in the deep end.</p>
+        <p>Currently looking for prospective employment where I will be able to flourish, improving my coding knowledge and learning the process of startups.</p>
+        <p>I see myself having my own start-up in the future.</p>
       </div>
     </div>
   </div>
 </div>
 
+<br class= pro-line>
+
 <div id="CV">
 	<div class="container">
     	<div class="row">
       		<div class="col-xs-12">
-           	  <h1 class="slideDown">Resume</h1>
+           	  <h1 class="slideDown">Résumé</h1>
+           	  <p>Ruby on Rails</p>
+           	  <p>JavaScript</p>
+           	  <p>HTML</p>
+           	  <p>CSS</p>
+           	  <p>& many more check out my resume!</p>
+           	  <div class="resume-link"> <%= link_to "My Resume", asset_path("mikeshielresume.pdf"), class: 'btn-large' %>
+           	  	
+           	  </div>
 			<!-- open up my resume -->
         	</div>
       	</div>
 	</div>
 </div>
 
+<br id= pro-line>
 
 <div id="contact">
 	<div class="container">
@@ -60,20 +73,18 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-6">
-              	<form method="POST" action=(shiel@gmail.com)">
+              	<form method="POST" action=(mikeshiel@mikeshiel.com)">
 		            <div class="form-group">
 		                <label for="email">What's your email?</label>
-		                <input type="email" name="email" class="form-control input-width" required="" placeholder="Your email" style="">
+		                <input type="email" name="email" class="form-control input-width" required="" placeholder="name@example.com" style="">
 		            </div>
 		            <div class="form-group">
 		              <label for="message">What's your message?</label>
-		              <textarea name="message" class="form-control input-width" rows="3" required="" placeholder="Your message" style=""></textarea>
+		              <textarea name="message" class="form-control input-width" rows="3" required="" placeholder="Type here.." style=""></textarea>
 		            </div>
 		              <input type="submit" class="button-contact" value="Submit">
               	</form>
       		</div>
-	          <!-- <div class="col-xs-12 col-md-6">
-	          </div> -->
         </div>
 	</div>
 </div>

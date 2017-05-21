@@ -1,3 +1,18 @@
+body{
+  background-color: $white;
+
+	#pro-line{
+		border-top: 1px solid $grey2;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 80px;
+	}
+}
+
+.container{
+	background-color: $white;
+}
+
 .navbar-fixed{
 	// display: flex;
     height: 70px;
@@ -8,7 +23,8 @@
     top: 0px;
     z-index: 3;
     width: 100%;
-    background-color: transparent;
+    background-color: black;
+	opacity: 0.2;
 }
 
 .nav-head{
@@ -18,7 +34,7 @@
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	padding-right: 150px;
-	background-color: transparent;
+
 
 	.nav-head a{
 	text-decoration: none;
@@ -31,14 +47,26 @@
 
 	#about1{
 	padding-right: 20px;
+	text-decoration: none;
+		&:hover{
+			color: $grey1;
+		}
 	}
 
 	#CV1{
 	padding-right: 20px;	
+	text-decoration: none;
+		&:hover{
+			color: $grey1;
+		}
 	}
 
 	#contact1{
-	padding-right: 20px;	
+	padding-right: 20px;
+	text-decoration: none;
+		&:hover{
+			color: $grey1;
+		}	
 	}
 }
 
@@ -49,26 +77,104 @@
 
 #about {
 	display: block;
-    background: #F9F9F9;
+    background: $white;
     height: 100%;
     overflow: hidden;
     min-height: 50vh;
     padding-bottom: 40px;
     padding-top: 300px;
+
+	h1{
+		padding-bottom: 20px;
+	}
+
 }
 
 #CV {
 	display: block;
-    background: #DFDFDF;
+    background: $white;
     overflow: hidden;
     min-height: 50vh;
     padding-bottom: 40px;
+
+    h1{
+    	padding-bottom: 20px;
+    }
+
+    p{
+    	padding-bottom: 10px;
+    }
 }
 
 #contact {
 	display: block;
-    background: #DFDFDF;
+    background: $white;
     overflow: hidden;
     min-height: 50vh;
     padding-bottom: 40px;
+
+	h1{
+		padding-bottom: 20px;
+	}
+}
+
+.resume-link{
+	padding-top: 20px;
+}
+
+.btn-large{
+  background-color: $white;
+  font-size: 20px;
+  height: 50px;
+  padding: 10px;
+  width: 135px;
+  color: $grey2 !important;
+  display: block;
+  border: 2px solid $grey2;
+  border-radius: 3px;
+  text-decoration: none;
+  	
+  	&:hover {
+    color: $red !important;
+    border: 2px solid $red;
+    text-decoration: none;
+  }
+    &:visited{
+    	color: $grey2;
+    	text-decoration: none;
+    }
+}.form-group{
+	padding-bottom: 20px;
+}
+
+.button-contact{
+	background-color: $grey2;
+	font-size: 20px;
+	height: 50px;
+	padding: 10px;
+	width: 130px;
+	color: $white !important;
+	display: block;
+	border: 2px solid $grey2;
+	border-radius: 3px;
+	text-decoration: none;
+		
+		&:hover {
+	  background-color: $red;	
+	  color: $white !important;
+	  border: 2px solid $red;
+	  text-decoration: none;
+	}
+	  &:visited{
+	  	color: $grey2;
+	  	text-decoration: none;
+	  	background-color: $white;
+
+	  }
+}
+
+label{
+	padding-bottom: 5px;
+	font-family: $base-font;
+	font-size: 15px;
 }

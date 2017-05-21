@@ -1,0 +1,39 @@
+h1{
+	font-family: $header-font;
+	color: $grey2;
+	font-size: 50px;
+
+}
+
+h2{
+	font-family: $base-font;
+		color: $grey2;
+	font-size: 40px
+}
+
+h3{
+	font-family: $base-font;
+		color: $grey2;
+	font-size: 30px
+}
+
+p{
+	font-family: $base-font;
+		color: $grey1;
+	font-size: 20px
+}
+
+a{
+	color: $grey2;
+	text-decoration: none
+	}
+
+ a:visited {
+  	color: $grey2;
+
+  }
+
+  a:focus {
+      outline: -webkit-focus-ring-color auto 5px;
+  }
+
