@@ -1,20 +1,25 @@
+#particles-js {
+  width: 100% !important;
+  height: 500px;
+  background-color: #2B2D42 ;
+  
+}
+
 body{
   background-color: $white;
-
-	#pro-line{
-		border-top: 1px solid $grey2;
+}
+	.pro-line{
+		border-top: 1px solid red;
 		margin-left: 20%;
 		margin-right: 20%;
 		margin-top: 80px;
 	}
-}
 
 .container{
 	background-color: $white;
 }
 
 .navbar-fixed{
-	// display: flex;
     height: 70px;
     align-items: center;
     justify-content: space-between;
@@ -23,8 +28,9 @@ body{
     top: 0px;
     z-index: 3;
     width: 100%;
-    background-color: black;
-	opacity: 0.2;
+    background-color: #2E2F31;
+	opacity: 0.4;
+
 }
 
 .nav-head{
@@ -45,37 +51,51 @@ body{
     text-decoration: none;
 	}
 
-	#about1{
+	#toAbout{
 	padding-right: 20px;
 	text-decoration: none;
-	opacity: 1;
+	color: white;
+	opacity: 1 !important;
 		&:hover{
-			color: $grey1;
+			color: grey;
 		}
 	}
 
-	#CV1{
+	#toCV{
 	padding-right: 20px;	
 	text-decoration: none;
+	color: white;
 	opacity: 1;
 		&:hover{
-			color: $grey1;
+			color: grey;
 		}
 	}
 
-	#contact1{
+	#toContact{
 	padding-right: 20px;
 	text-decoration: none;
+	color: white;
 	opacity: 1;
 		&:hover{
-			color: $grey1;
+			color: grey;
 		}	
 	}
 }
 
 .header-profile{
-	    margin-bottom: .3rem;
-	    padding-top: 200px;
+	visibility: !important;
+	position: absolute;
+	padding: 150px 1px 0px 50px;
+
+	h1{
+	color: $white;
+	}
+	h2{
+	color: $white;	
+	}
+	h3{
+	color: $white;	
+	}
 }
 
 #about {
@@ -84,7 +104,7 @@ body{
     overflow: hidden;
     min-height: 50vh;
     padding-bottom: 40px;
-    padding-top: 150px;
+    padding-top: 100px;
 
 	h1{
 		padding-bottom: 20px;
@@ -192,4 +212,8 @@ label{
 
 .fa-linkedin:hover {
 	color: $red;
+}
+
+.particles-js-canvas-el{
+	background: cover;
 }
