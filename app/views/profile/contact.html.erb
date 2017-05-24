@@ -1,14 +1,26 @@
 <div class="container top">
 	<div id="particles-js">		
   <canvas class="particles-js-canvas-el" style= "background-size: cover"></canvas>
-	 	<div class="navbar-fixed" id="navbar">
+	 	<div class="navbar-fixed hidden-xs" id="navbar">
 			<ul class="nav-head">
 				<li><a id= "toAbout" href="about">About</a></li>
 				<li><a id= "toCV" href="CV">Résumé</a></li>
 				<li><a id= "toContact" href="contact">Contact</a></li>
 			</ul>
 		</div>
+
+    <div class="container take-width hidden-sm hidden-md hidden-lg">
+      <div class="dropdown">
+        <i onclick="openMenu()" class="fa fa-bars fa-lg dropbtn"></i>
+        <div id="dropdown" class="dropdown-content">
+          <a id="toAbout" href="about">About</a>
+          <a id="toResume" href="CV">Résumé</a>
+          <a id="toContact" href="contact">Contact</a>
+        </div>
+      </div>
+    </div>
 		<div class="header-profile">
+    <%= image_tag 'mike.JPG', class: 'avatar', id: "cropped-avatar" %>
 			<h1>Mike Shiel</h1>
 			<h2>Web-Developer</h2>
 			<h3>Bachelors in International Relations (University of Pretoria)</h3>
@@ -42,7 +54,7 @@
   </div>
 </div>
 
-<br class= pro-line>
+<br class= proline>
 
 <!-- My CV -->
 

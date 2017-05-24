@@ -1,22 +1,30 @@
-#particles-js {
-  width: 100% !important;
-  height: 500px;
-  background-color: #2B2D42 ;
-  
+.particles-js {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #2B2D42 ; 
+  background-size: cover;
 }
 
 body{
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0;
   background-color: $white;
 }
-	.pro-line{
-		border-top: 1px solid red;
-		margin-left: 20%;
-		margin-right: 20%;
-		margin-top: 80px;
-	}
+
+.proline:br{
+	border: 1px solid #2B2D42 !important;
+	margin-left: 20% !important;
+	margin-right: 20% !important;
+	margin-top: 80px !important;
+	background-color: #2B2D42 !important;
+}
 
 .container{
 	background-color: $white;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
 }
 
 .navbar-fixed{
@@ -28,9 +36,6 @@ body{
     top: 0px;
     z-index: 3;
     width: 100%;
-    background-color: #2E2F31;
-	opacity: 0.4;
-
 }
 
 .nav-head{
@@ -40,6 +45,7 @@ body{
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	padding-right: 150px;
+	padding-top: 10px;
 
 
 	.nav-head a{
@@ -83,7 +89,6 @@ body{
 }
 
 .header-profile{
-	visibility: !important;
 	position: absolute;
 	padding: 150px 1px 0px 50px;
 
@@ -105,6 +110,7 @@ body{
     min-height: 50vh;
     padding-bottom: 40px;
     padding-top: 100px;
+    padding-left: 120px;
 
 	h1{
 		padding-bottom: 20px;
@@ -118,6 +124,7 @@ body{
     overflow: hidden;
     min-height: 50vh;
     padding-bottom: 40px;
+    padding-left: 120px;
 
     h1{
     	padding-bottom: 20px;
@@ -134,6 +141,7 @@ body{
     overflow: hidden;
     min-height: 50vh;
     padding-bottom: 40px;
+    padding-left: 120px;
 
 	h1{
 		padding-bottom: 20px;
@@ -215,5 +223,69 @@ label{
 }
 
 .particles-js-canvas-el{
-	background: cover;
+  width: 100vw !important;
+  height: 500px !important;
+  background-color: #2B2D42 ; 
+  background-size: cover;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 40px;
+
+}
+
+#cropped-avatar{
+  object-fit: cover;
+}
+
+.take-width {
+  width:100%;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  margin-left: auto;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #264D6E;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: $grey3}
+
+.show {display:block;}
+
+.pull-right {
+  float: right !important;
 }
