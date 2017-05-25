@@ -18,7 +18,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'devise'
-gem 'simple_form'
 
 group :development, :test do
 
