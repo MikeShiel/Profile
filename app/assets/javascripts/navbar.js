@@ -8,7 +8,7 @@ $(document).ready(function(){
     $navbar.css({ 'background' : 'rgba(43,45,66,0.0)' });
   } else if ( st > startFade && st < endFade ) {
     var transparancy = ((st/endFade - startFade/endFade) / (1 - startFade/endFade));
-    $navbar.css({ 'background' : `rgba(43,45,66,${transparancy})` });
+    $navbar.css({ 'background' : 'rgba(43,45,66,${transparancy})' });
   } else {
     $navbar.css({ 'background' : 'rgba(43,45,66,1)' });
   }
@@ -19,7 +19,7 @@ $(document).ready(function(){
       $navbar.css({ 'background' : 'rgba(43,45,66,0.0)' });
     } else if ( st > startFade && st < endFade ) {
       var transparancy = ((st/endFade - startFade/endFade) / (1 - startFade/endFade));
-      $navbar.css({ 'background' : `rgba(43,45,66,${transparancy})` });
+      $navbar.css({ 'background' : 'rgba(43,45,66,${transparancy})' });
     } else {
       $navbar.css({ 'background' : 'rgba(43,45,66,1)' });
     }
