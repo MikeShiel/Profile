@@ -37,3 +37,13 @@ a{
       outline: -webkit-focus-ring-color auto 5px;
   }
 
+.sbm{
+	color: $grey1;
+	font-family: $base-font;
+	&:hover{
+		color: $red;
+	}
+	&:visited{
+		color: $grey1;
+	}
+}
