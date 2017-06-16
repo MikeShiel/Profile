@@ -39,10 +39,13 @@ a{
 
 .sbm{
 	color: $grey1;
-	&:hover{
-		color: $red;
-	}
-	&:visited{
-		color: $grey1;
-	}
 }
+
+.sbm:hover{
+		color: $red;
+}
+
+.sbm:visited{
+		color: $grey1;
+}
+
